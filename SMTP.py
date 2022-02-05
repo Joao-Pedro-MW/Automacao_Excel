@@ -16,7 +16,7 @@ def enviar_email(remetente,destinatario,senha_login,assunto,nome_remetente):
   <html>
     <body>
       <p>Olá {nome}, tudo bem?<br>
-        Seu cadastro está em análise em noso banco de dados :D</p>
+        Seu cadastro está em análise em nosso banco de dados :D</p>
     </body>
   </html>
   """.format(nome = nome_remetente)
@@ -39,10 +39,3 @@ def enviar_email(remetente,destinatario,senha_login,assunto,nome_remetente):
       except smtplib.SMTPAuthenticationError:
         messagebox.showerror("Erro de login", "Login e/ou senha inválidos")
         pass
-        
-      
-
-  
-
-
-
